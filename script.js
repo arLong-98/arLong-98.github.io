@@ -1,5 +1,4 @@
 function segregateTransactions(data) {
-  console.log(data);
   const nList = data.transactions.reduce((groups, transaction) => {
     const date = transaction.startDate.split("T")[0];
     if (!groups[date]) {
